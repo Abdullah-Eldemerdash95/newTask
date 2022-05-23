@@ -1,6 +1,7 @@
+// comments almost the same as admin users profile page but less so we will comment only to extra things 
 const employeeContainer = document.querySelector(".employee-container")
-const employeeontainerPara = document.querySelector(".employee-container p");
-const employeeontainerImg = document.querySelector(".employee-container img");
+const employeeContainerPara = document.querySelector(".employee-container p");
+const employeeContainerImg = document.querySelector(".employee-container img");
 const logout = document.getElementById("logout");
 const contentContainer = document.getElementById("contentContainer");
 

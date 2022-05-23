@@ -1,18 +1,16 @@
 // constants 
-const Done = document.getElementById("RegisterDone");
-const myModal = document.getElementById("myModal");
-const myModal2 = document.getElementById("myModal2");
+const Done = document.getElementById("RegisterDone");// reigster button 
+const myModal = document.getElementById("myModal");// popup for right register
+const myModal2 = document.getElementById("myModal2");// popup for wrong register
 
 window.addEventListener("load", ()=> {
 //register-page
 Done.addEventListener("click", redirect3)
 })
 
-
-
     // redirect3 function is for registering user 
 function redirect3() {
-    // how to make post request in javascript
+    // post request to send data to fake api 
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 const update = {
@@ -36,11 +34,11 @@ const update = {
     console.log(update);
   })
   .then(() => {
-    myModal.style.display = "block";
+    myModal.style.display = "block"; // msg that show registeration went right
   }
 )
   .catch((error) => {
     console.log(error);
-    myModal2.style.display = "block";
+    myModal2.style.display = "block"; // msg that show registeration went wrong
   });
 }
