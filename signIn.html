@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./css/bootstrap.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+</head>
+<body>
+    <div class="signIn-page text-center">
+        <h1>
+            Sign In 
+        </h1>
+        <div class="child1">
+            <input name="email" type="email" class="btn btn-outline-primary rounded" id="email1" placeholder="eve.holt@reqres.in"/> 
+            <input name="password" type="password" class="btn btn-outline-primary rounded" id="password1" minlength="8" placeholder="cityslicka"/>
+            <button class="btn  btn-primary rounded" id="SignInNow">
+                Sign In
+            </button>
+            <div id="myModal3" class="modal">
+                <div class="modal-content">
+                    <div>
+                        <h3> Pick Your role to reach users page </h3>
+                        <div class="admin-role" id="adminRole">
+                            <button class="btn btn-primary" id="adminButton">
+                                Admin
+                            </button>
+                            <button class="btn btn-primary" id="employeeButton">
+                                Employee
+                            </button>
+                        </div>
+                        <div class="admin-users" id="adminUsers">
+                           <p>Admin Users </p>
+                        </div>
+                        <div class="employee-users" id="employeeUsers">
+                            <p>Employee users</p>
+                        </div> 
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="./js/jquery-3.5.1.min.js" ></script>
+        <script src="./js/bootstrap.min.js" ></script>
+        <script src="./js/signIn.js" ></script>
+</body>
+</html>

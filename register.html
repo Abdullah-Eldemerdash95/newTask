@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/bootstrap.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+</head>
+<body>
+    <div class="register-page text-center">
+        <h1>
+            Register for free
+        </h1>
+        <div class="child1">
+            <input name="email" type="email"  class="btn btn-outline-primary rounded" id="email" placeholder="eve.holt@reqres.in"/> 
+            <input name="password" type="password"  class="btn btn-outline-primary rounded" id="password" minlength="8" placeholder="pistol"/>
+            <button class="btn  btn-primary rounded" id="RegisterDone">
+                Done
+            </button>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <p>You registered for free now u can go to sign in page</p> 
+                    <button class="btn  btn-primary rounded" id="SignInButton">
+                    Go To sign in page
+                    </button>
+                </div>
+            </div>
+            <div id="myModal2" class="modal">
+                <div class="modal-content">
+                    <p>You failed to register</p> 
+                    <button class="btn btn-danger rounded " id="RegisterButton">
+                       try again
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="./js/jquery-3.5.1.min.js" ></script>
+        <script src="./js/bootstrap.min.js" ></script>
+        <script src="./js/main.js" ></script>
+        <script src="./js/register.js" ></script>
+</body>
+</html>

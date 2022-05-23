@@ -2,9 +2,6 @@
 const RegisterButton = document.getElementById("RegisterButton");
 const SignInButton = document.getElementById("SignInButton");
 
-
-
-
 window.addEventListener("load" , 
 ()=> {
       //def-page
